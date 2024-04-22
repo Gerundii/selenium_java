@@ -25,7 +25,6 @@ public class FirstTest {
         driver.get("https://www.google.com/");
         driver.findElement(By.name("q")).sendKeys("webdriver");
         driver.findElement(By.name("btnK")).click();
-        //System.out.println(driver.getTitle());
         wait.until(titleIs("webdriver - Поиск в Google"));
     }
 
